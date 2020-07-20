@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Check your browser :: Flaregun</title>
+    <meta charset="utf-8" />
+    <meta content="A website for increasing security awareness." name="description" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta content="#175506" name="theme-color" />
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="manifest.json" rel="manifest" />
+    <link href="css/main.css" rel="stylesheet" />
+    <script defer="defer" src="js/site-check.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Flaregun</h1>
+      <p>Check if a website has been pwned</p>
+    </div>
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="email-check.html">Email</a>
+      <a href="pass-check.html">Password</a>
+      <a href="browser-check.html">Browser</a>
+      <a class="active" href="site-check.html">Site</a>
+      <a href="tools.html">Tools</a>
+      <a href="tips.html">Tips</a>
+      <a href="feedback.html">Feedback</a>
+    </div>
+    <noscript>
+      <h3 style="text-align: center; padding: 100px;">
+        Some parts of Flaregun (unfortunately) need JavaScript to run properly :(
+      </h3>
+    </noscript>
+    <div class="main">
+      <h1>Put a domain in this box</h1>
+      <p>Data supplied by <a href="https://haveibeenpwned.com" rel="noopener noreferrer" target="_blank">HIBP</a></p>
+      <p>
+        <a href="https://haveibeenpwned.com/PwnedWebsites" rel="noopener noreferrer" target="_blank"
+          >See about how many breaches are publicly accessible</a
+        >
+      </p>
+      <p>
+        <a
+          href="http://www.informationisbeautiful.net/visualizations/worlds-biggest-data-breaches-hacks/"
+          rel="noopener noreferrer"
+          target="_blank"
+          >World's biggest data breaches</a
+        >
+      </p>
+      <label aria-label="enter the domain name here"
+        ><input
+          autocapitalize="off"
+          autofocus
+          id="input"
+          pattern="^(([a-zA-Z]{1})|([a-zA-Z]{1}[a-zA-Z]{1})|([a-zA-Z]{1}[0-9]{1})|([0-9]{1}[a-zA-Z]{1})|([a-zA-Z0-9][a-zA-Z0-9-_]{1,61}[a-zA-Z0-9]))\.([a-zA-Z]{2,6}|[a-zA-Z0-9-]{2,30}\.[a-zA-Z]{2,3})$"
+          placeholder="example.com"
+          required
+          spellcheck="false"
+          type="text"
+      /></label>
+
+      <button id="button" type="submit">pwned?</button>
+    </div>
+    <div aria-live="polite" class="flex-container" id="output"></div>
+  </body>
+</html>

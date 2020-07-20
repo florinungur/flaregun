@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Check your browser :: Flaregun</title>
+    <meta charset="utf-8" />
+    <meta content="A website for increasing security awareness." name="description" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta content="#175506" name="theme-color" />
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="manifest.json" rel="manifest" />
+    <link href="css/main.css" rel="stylesheet" />
+    <script defer="defer" src="js/browser-check.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Flaregun</h1>
+      <p>Check if your browser is relatively secure</p>
+    </div>
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="email-check.html">Email</a>
+      <a href="pass-check.html">Password</a>
+      <a class="active" href="browser-check.html">Browser</a>
+      <a href="site-check.html">Site</a>
+      <a href="tools.html">Tools</a>
+      <a href="tips.html">Tips</a>
+      <a href="feedback.html">Feedback</a>
+    </div>
+    <noscript>
+      <h3 style="text-align: center; padding: 100px;">
+        Some parts of Flaregun (unfortunately) need JavaScript to run properly :(
+      </h3>
+    </noscript>
+    <div class="table">
+      <dl>
+        <dt>Browser</dt>
+        <dd id="browser"></dd>
+        <dd>
+          The best way to make sure your browser is relatively secure is to
+          <a href="https://updatemybrowser.org" rel="noopener noreferrer" target="_blank">keep it up to date</a>.
+        </dd>
+      </dl>
+      <dl>
+        <dt>Plugins</dt>
+        <dd id="plugins"></dd>
+        <dd>More plugins = bigger attack area</dd>
+      </dl>
+      <dl>
+        <dt>Fonts</dt>
+        <dd id="fonts"></dd>
+        <dd>
+          The more fonts you have, the chance that your browser has a unique configuration increases, alongside its
+          <a href="https://panopticlick.eff.org/static/browser-uniqueness.pdf" rel="noopener noreferrer" target="_blank"
+            >entropy (according to EFF)</a
+          >.
+        </dd>
+      </dl>
+      <dl>
+        <dt>Monitor size</dt>
+        <dd id="monitorSize"></dd>
+        <dd>Useful for fingerprinting.</dd>
+      </dl>
+      <dl>
+        <dt>Browser size</dt>
+        <dd id="browserSize"></dd>
+      </dl>
+      <dl>
+        <dt>This screen is a</dt>
+        <dd id="touchscreen"></dd>
+      </dl>
+      <dl>
+        <dt>Adblocking is</dt>
+        <dd id="block_me"></dd>
+      </dl>
+      <dl>
+        <dt>Flash is</dt>
+        <dd id="flash"></dd>
+        <dd>
+          <a
+            href="https://www.cvedetails.com/vulnerability-list/vendor_id-53/product_id-6761/Adobe-Flash-Player.html"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Flash is bad, mkay?</a
+          >
+        </dd>
+      </dl>
+      <dl>
+        <dt>
+          <a href="https://en.wikipedia.org/wiki/Do_Not_Track" rel="noopener noreferrer" target="_blank">
+            Do Not Track</a
+          >
+          is
+        </dt>
+        <dd id="dnt"></dd>
+        <dd>
+          From a security (not privacy) standpoint, as the number of third-party connections increases, so does the
+          chance that one of them is malicious. Also, less connections equals less network usage, making things
+          speedier.
+        </dd>
+      </dl>
+      <dl>
+        <dt>Referrer</dt>
+        <dd id="referrer"></dd>
+        <dd>
+          A referrer is the page from which you arrived at the current page. Now what if you arrived here from your
+          bank's website and your bank included sensitive info in the URL? It's not that uncommon.
+          <a
+            href="https://blog.avatao.com/How-I-could-steal-your-photos-from-Google/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Google has similar problems</a
+          >
+          from time to time.
+        </dd>
+      </dl>
+    </div>
+    <div class="flex-container">
+      <p>More ways to check your browser:</p>
+      <ul>
+        <li>
+          <a href="https://browserleaks.com" rel="noopener noreferrer" target="_blank">browserleaks</a>
+        </li>
+        <li>
+          <a href="https://panopticlick.eff.org" rel="noopener noreferrer" target="_blank">panopticlick</a>
+        </li>
+        <li>
+          <a href="https://dnsleaktest.com" rel="noopener noreferrer" target="_blank">dnsleaktest</a>
+        </li>
+        <li>
+          <a href="https://ipleak.net" rel="noopener noreferrer" target="_blank">ipleak</a>
+        </li>
+        <li>
+          <a href="https://ip-check.info/?lang=en" rel="noopener noreferrer" target="_blank">ip-check</a>
+        </li>
+        <li>
+          <a href="http://browserspy.dk" rel="noopener noreferrer" target="_blank">browserspy</a>
+        </li>
+        <li>
+          <a href="https://amiunique.org/fp" rel="noopener noreferrer" target="_blank">amiunique</a>
+        </li>
+        <li>
+          <a href="https://tenta.com/test" rel="noopener noreferrer" target="_blank">tenta</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

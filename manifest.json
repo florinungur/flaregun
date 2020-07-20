@@ -1,0 +1,22 @@
+{
+  "name": "Flaregun",
+  "short_name": "Flaregun",
+  "description": "A website for increasing security awareness.",
+  "icons": [
+    {
+      "src": "img/flaregun-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "img/flaregun-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "index.html",
+  "background_color": "#175506",
+  "display": "standalone",
+  "scope": ".",
+  "theme_color": "#175506"
+}
