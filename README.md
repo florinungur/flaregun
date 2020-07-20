@@ -1,5 +1,7 @@
 # Flaregun - A website for increasing security awareness.
 
+![Flaregun logo](img/flaregun-512.png)
+
 This is the source code for the Flaregun website at https://ungurflorin.github.io/flaregun.
 
 # About the website
