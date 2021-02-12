@@ -49,7 +49,7 @@ function getResults() {
         e.forEach((e) => {
           e.Domain === input.value &&
             ((n.style.borderColor = "#8a1919"),
-            (n.innerHTML = `<img src="${e.LogoPath}" alt="Flaregun logo">
+            (n.innerHTML = `<img src="${e.LogoPath}" alt="flaregun logo">
             <h2>${input.value}\n            has been breached!</h2>
             ${e.Description}<br>`),
             (t = !0));

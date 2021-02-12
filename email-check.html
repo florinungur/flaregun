@@ -1,68 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Check your browser :: Flaregun</title>
-    <meta charset="utf-8" />
-    <meta content="A website for increasing security awareness." name="description" />
-    <meta content="width=device-width,initial-scale=1" name="viewport" />
-    <meta content="#175506" name="theme-color" />
-    <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
-    <link href="manifest.json" rel="manifest" />
-    <link href="css/main.css" rel="stylesheet" />
+<head>
+    <title>Check your browser :: flaregun</title>
+    <meta charset="utf-8"/>
+    <meta content="A website for increasing security awareness." name="description"/>
+    <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    <meta content="#175506" name="theme-color"/>
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon"/>
+    <link href="manifest.json" rel="manifest"/>
+    <link href="css/main-min.css" rel="stylesheet"/>
     <style>
-      .flex-container div {
-        border: 1px solid #8a1919;
-      }
+        .flex-container div {
+            border: 1px solid #8a1919;
+        }
 
-      .flex-container a {
-        text-decoration-color: #8a1919;
-      }
+        .flex-container a {
+            text-decoration-color: #8a1919;
+        }
     </style>
     <script defer="defer" src="js/email-check.js"></script>
-  </head>
-  <body>
-    <div class="header">
-      <h1>Flaregun</h1>
-      <p>Check if your email account has been pwned</p>
-    </div>
-    <div class="navbar">
-      <a href="index">Home</a>
-      <a class="active" href="email-check">Email</a>
-      <a href="pass-check">Password</a>
-      <a href="browser-check">Browser</a>
-      <a href="site-check">Site</a>
-      <a href="tools">Tools</a>
-      <a href="tips">Tips</a>
-      <a href="feedback">Feedback</a>
-    </div>
-    <noscript>
-      <h3 style="text-align: center; padding: 100px;">
-        Some parts of Flaregun (unfortunately) need JavaScript to run properly :(
-      </h3>
-    </noscript>
-    <div class="main">
-      <h1>Put an email in this box</h1>
-      <p style="color: red;">
-        THIS PAGE
-        <a
-          href="https://web.archive.org/web/20200708021002/https://www.troyhunt.com/authentication-and-the-have-i-been-pwned-api/"
-          rel="noopener noreferrer"
-          target="_blank"
-          style="color: red;"
-          >NO LONGER WORKS</a
-        >
-      </p>
-      <p>Data supplied by <a href="https://haveibeenpwned.com" rel="noopener noreferrer" target="_blank">HIBP</a></p>
-      <p>
-        If you want to be notified of future breaches, use the
-        <a href="https://haveibeenpwned.com/NotifyMe" rel="noopener noreferrer" target="_blank">original site</a>
-      </p>
-      <label aria-label="enter your email address here">
-        <input autofocus id="input" placeholder="test@example.com" required spellcheck="false" type="email" />
-      </label>
-      <button id="button" type="submit">pwned?</button>
-      <p id="counter"></p>
-    </div>
-    <div aria-live="polite" class="flex-container" id="output"></div>
-  </body>
+</head>
+<body>
+<div class="header">
+    <h1>flaregun</h1>
+    <p>Check if your email account has been pwned</p>
+</div>
+<div class="navbar">
+    <a href="index">Home</a>
+    <a class="active" href="email-check">Email</a>
+    <a href="pass-check">Password</a>
+    <a href="browser-check">Browser</a>
+    <a href="site-check">Site</a>
+    <a href="tools">Tools</a>
+    <a href="tips">Tips</a>
+    <a href="feedback">Feedback</a>
+</div>
+<noscript>
+    <h3 style="text-align: center; padding: 100px;">Some parts of flaregun (unfortunately) need JavaScript to run properly :(</h3>
+</noscript>
+<div class="main">
+    <h1>Put an email in this box</h1>
+    <p style="color: red;">THIS PAGE <a href="https://web.archive.org/web/20200708021002/https://www.troyhunt.com/authentication-and-the-have-i-been-pwned-api/"
+                                        rel="noopener noreferrer" target="_blank" style="color: red;">NO LONGER WORKS</a></p>
+    <p>Data supplied by <a href="https://haveibeenpwned.com" rel="noopener noreferrer" target="_blank">HIBP</a></p>
+    <p>If you want to be notified of future breaches, use the <a href="https://haveibeenpwned.com/NotifyMe" rel="noopener noreferrer" target="_blank">original
+        site</a></p>
+    <label aria-label="enter your email address here">
+        <input autofocus id="input" placeholder="test@example.com" required spellcheck="false" type="email"/>
+    </label>
+    <button id="button" type="submit">pwned?</button>
+    <p id="counter"></p>
+</div>
+<div aria-live="polite" class="flex-container" id="output"></div>
+</body>
 </html>

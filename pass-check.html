@@ -1,70 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Check your browser :: Flaregun</title>
-    <meta charset="utf-8" />
-    <meta content="A website for increasing security awareness." name="description" />
-    <meta content="width=device-width,initial-scale=1" name="viewport" />
-    <meta content="#175506" name="theme-color" />
-    <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
-    <link href="manifest.json" rel="manifest" />
-    <link href="css/main.css" rel="stylesheet" />
+<head>
+    <title>Check your browser :: flaregun</title>
+    <meta charset="utf-8"/>
+    <meta content="A website for increasing security awareness." name="description"/>
+    <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    <meta content="#175506" name="theme-color"/>
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon"/>
+    <link href="manifest.json" rel="manifest"/>
+    <link href="css/main-min.css" rel="stylesheet"/>
     <style>
-      .flex-container {
-        align-items: center;
-        flex-flow: column wrap;
-      }
+        .flex-container {
+            align-items: center;
+            flex-flow: column wrap;
+        }
 
-      .flex-container div {
-        border: 1px solid #8a1919;
-      }
+        .flex-container div {
+            border: 1px solid #8a1919;
+        }
     </style>
     <script defer="defer" src="js/pass-check.js"></script>
-  </head>
-  <body>
-    <div class="header">
-      <h1>Flaregun</h1>
-      <p>Check if your password is any good</p>
-    </div>
-    <div class="navbar">
-      <a href="index">Home</a>
-      <a href="email-check">Email</a>
-      <a class="active" href="pass-check">Password</a>
-      <a href="browser-check">Browser</a>
-      <a href="site-check">Site</a>
-      <a href="tools">Tools</a>
-      <a href="tips">Tips</a>
-      <a href="feedback">Feedback</a>
-    </div>
-    <noscript>
-      <h3 style="text-align: center; padding: 100px;">
-        Some parts of Flaregun (unfortunately) need JavaScript to run properly :(
-      </h3>
-    </noscript>
-    <div class="main">
-      <h1>Put a passphrase in this box</h1>
-      <p>Data supplied by <a href="https://haveibeenpwned.com" rel="noopener noreferrer" target="_blank">HIBP</a></p>
-      <p id="learnToPass">
-        Learn how to make a good passphrase with
-        <a
-          href="https://web.archive.org/web/20200717034302/https://xkcd.com/936/"
-          rel="noopener noreferrer"
-          target="_blank"
-          >xkcd</a
-        >
-        and
-        <a
-          href="https://web.archive.org/web/20200719172226/https://ssd.eff.org/en/module/creating-strong-passwords"
-          rel="noopener noreferrer"
-          target="_blank"
-          >ssd.eff.org</a
-        >
-      </p>
-      <label aria-label="enter your password here">
-        <input autofocus id="input" required type="password" />
-      </label>
-      <button id="button" type="submit">pwned?</button>
-    </div>
-    <div aria-live="polite" class="flex-container" id="output"></div>
-  </body>
+</head>
+<body>
+<div class="header">
+    <h1>flaregun</h1>
+    <p>Check if your password is any good</p>
+</div>
+<div class="navbar">
+    <a href="index">Home</a>
+    <a href="email-check">Email</a>
+    <a class="active" href="pass-check">Password</a>
+    <a href="browser-check">Browser</a>
+    <a href="site-check">Site</a>
+    <a href="tools">Tools</a>
+    <a href="tips">Tips</a>
+    <a href="feedback">Feedback</a>
+</div>
+<noscript>
+    <h3 style="text-align: center; padding: 100px;">Some parts of flaregun (unfortunately) need JavaScript to run properly :(</h3>
+</noscript>
+<div class="main">
+    <h1>Put a passphrase in this box</h1>
+    <p>Data supplied by <a href="https://haveibeenpwned.com" rel="noopener noreferrer" target="_blank">HIBP</a></p>
+    <p id="learnToPass">Learn how to make a good passphrase with
+        <a href="https://web.archive.org/web/20200717034302/https://xkcd.com/936/" rel="noopener noreferrer" target="_blank">xkcd</a> and
+        <a href="https://web.archive.org/web/20200719172226/https://ssd.eff.org/en/module/creating-strong-passwords" rel="noopener noreferrer" target="_blank">ssd.eff.org</a>
+    </p>
+    <label aria-label="enter your password here">
+        <input autofocus id="input" required type="password"/>
+    </label>
+    <button id="button" type="submit">pwned?</button>
+</div>
+<div aria-live="polite" class="flex-container" id="output"></div>
+</body>
 </html>
